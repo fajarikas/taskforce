@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="flex bg-abu">
+    <aside
+      class="fixed top-0 left-0 w-80 h-screen overflow-hidden bg-[#192947] shadow"
+    >
+      <div class="h-screen px-3 py-4">
+        <div
+          class="text-biru mt-5 flex py-3 rounded-2xl justify-center items-center gap-x-5"
+        >
+          <img
+            src="assets/img/Logo Putih no bg with text.png"
+            class="w-[30%]"
+          />
+          <p class="font-montserrat font-bold text-2xl text-white">
+            Task Force
+          </p>
+        </div>
+        <hr class="mx-4 my-4" />
+
+        <div class="block">
+          <div class="justify-center flex mt-7">
+            <img src="assets/img/assistant.jpg" class="rounded-full w-[40%]" />
+          </div>
+
+          <div class="flex justify-center mt-3">
+            <p class="font-medium font-poppins text-white"> GCS Team </p>
+          </div>
+          <a class="flex justify-center">
+            <button
+              href="#"
+              class="border py-2 px-3 text-xs rounded-full border-white mt-4 text-white"
+            >
+              Log Out
+            </button>
+          </a>
+        </div>
+
+        <div class="gap-y-5">
+          <div
+            class="flex text-white font-medium gap-x-4 pl-7 mx-5 py-3 hover:bg-abu2 mt-10 rounded-lg justify-start items-center"
+          >
+            <i class="fa-solid fa-dashboard"></i>
+            <a class="" href="index.html">Dashboard</a>
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="flex text-white font-medium gap-x-4 pl-7 mx-5 py-3 bg-abu2 mt-4 rounded-lg justify-start items-center"
+            >
+              <i class="fa-solid fa-plane-departure"></i>
+              <p class="" href="uav.html">UAV</p>
+            </a>
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="flex text-white font-medium gap-x-4 pl-7 mx-5 py-3 hover:bg-abu2 mt-4 rounded-lg justify-start items-center"
+            >
+              <i class="fa-solid fa-tower-cell"></i>
+              <p class="" href="#">Antenna Tracker</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <section id="content" class="font-poppins ml-96 mt-10 w-full mr-10">
+      <div class="mt-10 relative sm:rounded-lg">
+        <div
+          class="flex border-b-2 w-full pb-4 justify-between items-center mb-10"
+        >
+          <div class="block">
+            <p class="font-bold text-4xl text-white mb-2"
+              >Welcome Back, GCS Team!</p
+            >
+            <p class="text-lg text-white font-medium mb-7"
+              >We Are Ready To, TAKE THE CROWN FROM THE KING!
+            </p>
+          </div>
+
+          <img
+            src="assets/img/Logo Putih no bg with text.png"
+            class="w-[10%]"
+          />
+        </div>
+
+        <div>
+          <div class="my-14 flex justify-between">
+            <div class="block">
+              <p class="font-bold text-2xl font-montserrat text-white"
+                >Our UAV!</p
+              >
+              <hr class="w-14 border-2 mt-1" />
+            </div>
+            <a
+              href="#"
+              class="py-1 px-4 rounded-lg text-white bg-hijau hover:bg-gradient-to-b hover:from-hijau hover:to-darkblue shadow-2xl hover:shadow-2xl"
+              >Add New UAV</a
+            >
+          </div>
+          <div class="flex items-center mb-7 gap-x-4">
+            <input
+              type="text"
+              placeholder="Search UAV"
+              class="w-full rounded-md pl-4 h-10 shadow-xl"
+            />
+            <a
+              href="#"
+              class="py-2 px-4 shadow-xl bg-darkblue rounded-lg text-white hover:bg-gradient-to-b hover:from-darkblue hover:to-hijau"
+              >Search</a
+            >
+          </div>
+        </div>
+        <table class="w-full text-sm text-left text-white mb-24">
+          <thead class="text-xs bg-darkblue border-2 border-darkblue">
+            <tr>
+              <th scope="col" class="px-6 py-3"> NAME </th>
+              <th scope="col" class="px-6 py-3"> 3D MODEL </th>
+              <th scope="col" class="px-6 py-3"> STATUS </th>
+              <th scope="col" class="px-6 py-3"> BATTERY </th>
+              <th scope="col" class="px-6 py-3"> CONNECTIVITY </th>
+              <th scope="col" class="px-6 py-3 flex justify-center">
+                ACTION
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="bg-white text-darkblue text-base font-medium shadow-2xl rounded-xl"
+          >
+            <tr class="">
+              <a href="#">
+                <td class="px-6 py-4"> UAV A </td>
+                <td class="px-6 py-4">
+                  <img
+                    src="assets/img/Logo Biru muda no bg no text.png"
+                    class="w-36"
+                  />
+                </td>
+                <td class="px-6 py-4"> On </td>
+                <td class="px-6 py-4"> 92% </td>
+                <td class="px-6 py-4"> IP </td>
+                <td class="px-6 py-4 flex justify-evenly">
+                  <a
+                    href="#"
+                    class="py-1 px-4 rounded-lg text-white bg-biru hover:bg-white hover:border hover:border-biru hover:text-biru"
+                    >More</a
+                  >
+                  <a
+                    href="#"
+                    class="py-1 px-4 rounded-lg text-white bg-kuning hover:bg-white hover:border hover:border-kuning hover:text-kuning"
+                    >Edit</a
+                  >
+                  <a
+                    href="#"
+                    class="py-1 px-4 rounded-lg text-white bg-merahbat hover:bg-white hover:border hover:border-merahbat hover:text-merahbat"
+                    >Delete</a
+                  >
+                </td>
+              </a>
+            </tr>
+
+            <tr class="">
+              <a href="#">
+                <td class="px-6 py-4"> UAV A </td>
+                <td class="px-6 py-4">
+                  <img
+                    src="assets/img/Logo Biru muda no bg no text.png"
+                    class="w-36"
+                  />
+                </td>
+                <td class="px-6 py-4"> On </td>
+                <td class="px-6 py-4"> 92% </td>
+                <td class="px-6 py-4"> IP </td>
+                <td class="px-6 py-4 flex justify-evenly">
+                  <a
+                    href="#"
+                    class="py-1 px-4 rounded-lg text-white bg-biru hover:bg-white hover:border hover:border-biru hover:text-biru"
+                    >More</a
+                  >
+                  <a
+                    href="#"
+                    class="py-1 px-4 rounded-lg text-white bg-kuning hover:bg-white hover:border hover:border-kuning hover:text-kuning"
+                    >Edit</a
+                  >
+                  <a
+                    href="#"
+                    class="py-1 px-4 rounded-lg text-white bg-merahbat hover:bg-white hover:border hover:border-merahbat hover:text-merahbat"
+                    >Delete</a
+                  >
+                </td>
+              </a>
+            </tr>
+
+            <tr class="">
+              <a href="#">
+                <td class="px-6 py-4"> UAV A </td>
+                <td class="px-6 py-4">
+                  <img
+                    src="assets/img/Logo Biru muda no bg no text.png"
+                    class="w-36"
+                  />
+                </td>
+                <td class="px-6 py-4"> On </td>
+                <td class="px-6 py-4"> 92% </td>
+                <td class="px-6 py-4"> IP </td>
+                <td class="px-6 py-4 flex justify-evenly">
+                  <a
+                    href="#"
+                    class="py-1 px-4 rounded-lg text-white bg-biru hover:bg-white hover:border hover:border-biru hover:text-biru"
+                    >More</a
+                  >
+                  <a
+                    href="#"
+                    class="py-1 px-4 rounded-lg text-white bg-kuning hover:bg-white hover:border hover:border-kuning hover:text-kuning"
+                    >Edit</a
+                  >
+                  <a
+                    href="#"
+                    class="py-1 px-4 rounded-lg text-white bg-merahbat hover:bg-white hover:border hover:border-merahbat hover:text-merahbat"
+                    >Delete</a
+                  >
+                </td>
+              </a>
+            </tr>
+
+            <tr class="">
+              <a href="#">
+                <td class="px-6 py-4"> UAV A </td>
+                <td class="px-6 py-4">
+                  <img
+                    src="assets/img/Logo Biru muda no bg no text.png"
+                    class="w-36"
+                  />
+                </td>
+                <td class="px-6 py-4"> On </td>
+                <td class="px-6 py-4"> 92% </td>
+                <td class="px-6 py-4"> IP </td>
+                <td class="px-6 py-4 flex justify-evenly">
+                  <a
+                    href="#"
+                    class="py-1 px-4 rounded-lg text-white bg-biru hover:bg-white hover:border hover:border-biru hover:text-biru"
+                    >More</a
+                  >
+                  <a
+                    href="#"
+                    class="py-1 px-4 rounded-lg text-white bg-kuning hover:bg-white hover:border hover:border-kuning hover:text-kuning"
+                    >Edit</a
+                  >
+                  <a
+                    href="#"
+                    class="py-1 px-4 rounded-lg text-white bg-merahbat hover:bg-white hover:border hover:border-merahbat hover:text-merahbat"
+                    >Delete</a
+                  >
+                </td>
+              </a>
+            </tr>
+
+            <tr class="">
+              <a href="#">
+                <td class="px-6 py-4"> UAV A </td>
+                <td class="px-6 py-4">
+                  <img
+                    src="assets/img/Logo Biru muda no bg no text.png"
+                    class="w-36"
+                  />
+                </td>
+                <td class="px-6 py-4"> On </td>
+                <td class="px-6 py-4"> 92% </td>
+                <td class="px-6 py-4"> IP </td>
+                <td class="px-6 py-4 flex justify-evenly">
+                  <a
+                    href="#"
+                    class="py-1 px-4 rounded-lg text-white bg-biru hover:bg-white hover:border hover:border-biru hover:text-biru"
+                    >More</a
+                  >
+                  <a
+                    href="#"
+                    class="py-1 px-4 rounded-lg text-white bg-kuning hover:bg-white hover:border hover:border-kuning hover:text-kuning"
+                    >Edit</a
+                  >
+                  <a
+                    href="#"
+                    class="py-1 px-4 rounded-lg text-white bg-merahbat hover:bg-white hover:border hover:border-merahbat hover:text-merahbat"
+                    >Delete</a
+                  >
+                </td>
+              </a>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/f91646e1c1.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

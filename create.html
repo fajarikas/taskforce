@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="flex bg-abu">
+    <aside
+      class="fixed top-0 left-0 w-80 h-screen overflow-hidden bg-[#192947] shadow"
+    >
+      <div class="h-screen px-3 py-4">
+        <div
+          class="text-biru mt-5 flex py-3 rounded-2xl justify-center items-center gap-x-5"
+        >
+          <img
+            src="assets/img/Logo Putih no bg with text.png"
+            class="w-[30%]"
+          />
+          <p class="font-montserrat font-bold text-2xl text-white">
+            Task Force
+          </p>
+        </div>
+        <hr class="mx-4 my-4" />
+
+        <div class="block">
+          <div class="justify-center flex mt-7">
+            <img src="assets/img/assistant.jpg" class="rounded-full w-[40%]" />
+          </div>
+
+          <div class="flex justify-center mt-3">
+            <p class="font-medium font-poppins text-white"> GCS Team </p>
+          </div>
+          <a class="flex justify-center">
+            <button
+              href="#"
+              class="border py-2 px-3 text-xs rounded-full border-white mt-4 text-white"
+            >
+              Log Out
+            </button>
+          </a>
+        </div>
+
+        <div class="gap-y-5">
+          <div
+            class="flex text-white font-medium gap-x-4 pl-7 mx-5 py-3 hover:bg-abu2 mt-10 rounded-lg justify-start items-center"
+          >
+            <i class="fa-solid fa-dashboard"></i>
+            <a class="" href="index.html">Dashboard</a>
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="flex text-white font-medium gap-x-4 pl-7 mx-5 py-3 bg-abu2 mt-4 rounded-lg justify-start items-center"
+            >
+              <i class="fa-solid fa-plane-departure"></i>
+              <p class="" href="uav.html">UAV</p>
+            </a>
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="flex text-white font-medium gap-x-4 pl-7 mx-5 py-3 hover:bg-abu2 mt-4 rounded-lg justify-start items-center"
+            >
+              <i class="fa-solid fa-tower-cell"></i>
+              <p class="" href="#">Antenna Tracker</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <section id="content" class="font-poppins ml-96 mt-10 w-full mr-10">
+      <div class="mt-10 relative sm:rounded-lg">
+        <div
+          class="flex border-b-2 w-full pb-4 justify-between items-center mb-10"
+        >
+          <div class="block">
+            <p class="font-bold text-4xl text-white mb-2"
+              >Welcome Back, GCS Team!</p
+            >
+            <p class="text-lg text-white font-medium mb-7"
+              >We Are Ready To, TAKE THE CROWN FROM THE KING!
+            </p>
+          </div>
+
+          <img
+            src="assets/img/Logo Putih no bg with text.png"
+            class="w-[10%]"
+          />
+        </div>
+      </div>
+
+      <div class="bg-darkblue p-10 rounded-xl mb-10">
+        <div class="">
+          <p class="border-b-2 text-white font-semibold text-xl pb-5 shadow-2xl"
+            >Add New UAV</p
+          >
+          <div class="w-[80%] mx-auto my-10">
+            <div>
+              <p class="text-white font-medium mt-5 mb-2 ml-1">UAV Name</p>
+              <input
+                type="text"
+                placeholder="Ex: UAV A"
+                class="rounded-lg pl-5 text-white bg-white border-white w-full py-2"
+              />
+            </div>
+
+            <div class="mt-10">
+              <p class="text-white font-medium mt-5 mb-2 ml-1">UAV 3D Model</p>
+              <label
+                class="shadow-2xl flex justify-center w-full h-64 px-4 transition bg-white border-2 border-gray-300 border-dashed rounded-lg appearance-none cursor-pointer hover:border-gray-400 focus:outline-none"
+              >
+                <span class="flex items-center space-x-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6 text-gray-600"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"
+                    />
+                  </svg>
+                  <span class="font-medium text-gray-600">
+                    Drop files to Attach, or
+                    <span class="text-blue-600 underline">browse</span>
+                  </span>
+                </span>
+                <input type="file" name="file_upload" class="hidden" />
+              </label>
+            </div>
+
+            <div class="">
+              <p class="text-white font-medium mt-10 mb-2 ml-1">Connectivity</p>
+              <div class="flex gap-x-5">
+                <select
+                  id="countries"
+                  class="bg-white border border-gray-300 text-sm rounded-lg block w-full p-2.5"
+                >
+                  <option selected>Choose connection </option
+                  ><option value="ip">Internet Protocol</option>
+                  <option value="antenna">Antenna Tracker</option>
+                </select>
+                <input
+                  type="text"
+                  placeholder="Ex: 1901.4232.452"
+                  class="rounded-lg pl-5 text-darkblue bg-white border-white w-full py-2"
+                />
+                <a
+                  href="#"
+                  class="py-2 px-4 rounded-lg text-white bg-biru hover:bg-gradient-to-b hover:from-biru hover:to-darkblue hover:text-white"
+                  >Connect</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="#"
+            class="ml-[122px] mt-24 py-2 px-4 rounded-lg text-white bg-hijau hover:bg-gradient-to-b hover:from-hijau hover:to-darkblue shadow hover:text-white"
+            >Connect</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/f91646e1c1.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

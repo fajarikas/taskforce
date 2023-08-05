@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="flex bg-abu">
+    <aside
+      class="fixed top-0 left-0 w-80 h-screen overflow-hidden bg-[#192947] shadow"
+    >
+      <div class="h-screen px-3 py-4">
+        <div
+          class="text-biru mt-5 flex py-3 rounded-2xl justify-center items-center gap-x-5"
+        >
+          <img
+            src="assets/img/Logo Putih no bg with text.png"
+            class="w-[30%]"
+          />
+          <p class="font-montserrat font-bold text-2xl text-white">
+            Task Force
+          </p>
+        </div>
+        <hr class="mx-4 my-4" />
+
+        <div class="block">
+          <div class="justify-center flex mt-7">
+            <img src="assets/img/assistant.jpg" class="rounded-full w-[40%]" />
+          </div>
+
+          <div class="flex justify-center mt-3">
+            <p class="font-medium font-poppins text-white"> GCS Team </p>
+          </div>
+          <a class="flex justify-center">
+            <button
+              href="#"
+              class="border py-2 px-3 text-xs rounded-full border-white mt-4 text-white"
+            >
+              Log Out
+            </button>
+          </a>
+        </div>
+
+        <div class="gap-y-5">
+          <div
+            class="flex text-white font-medium gap-x-4 pl-7 mx-5 py-3 bg-abu2 mt-10 rounded-lg justify-start items-center"
+          >
+            <i class="fa-solid fa-dashboard"></i>
+            <a class="" href="index.html">Dashboard</a>
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="flex text-white font-medium gap-x-4 pl-7 mx-5 py-3 hover:bg-abu2 mt-4 rounded-lg justify-start items-center"
+            >
+              <i class="fa-solid fa-plane-departure"></i>
+              <p class="" href="uav.html">UAV</p>
+            </a>
+          </div>
+
+          <div>
+            <a
+              href="#"
+              class="flex text-white font-medium gap-x-4 pl-7 mx-5 py-3 hover:bg-abu2 mt-4 rounded-lg justify-start items-center"
+            >
+              <i class="fa-solid fa-tower-cell"></i>
+              <p class="" href="#">Antenna Tracker</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <section id="content" class="font-poppins ml-96 mt-10 w-full mr-10">
+      <div
+        class="flex border-b-2 w-full pb-4 justify-between items-center mb-10"
+      >
+        <div class="block">
+          <p class="font-bold text-4xl text-white mb-2"
+            >Welcome Back, GCS Team!</p
+          >
+          <p class="text-lg text-white font-medium mb-7"
+            >We Are Ready To, TAKE THE CROWN FROM THE KING!
+          </p>
+        </div>
+
+        <img src="assets/img/Logo Putih no bg with text.png" class="w-[10%]" />
+      </div>
+
+      <p
+        class="text-2xl flex justify-center font-bold mt-12 mb-8 border-r-2 border-l-2 mx-96 text-white font-montserrat"
+        >UAV Data</p
+      >
+      <div class="grid grid-cols-3 gap-5">
+        <div
+          class="block p-10 bg-gradient-to-r from-darkblue to-biru text-white shadow-2xl rounded-xl hover:shadow-lg"
+        >
+          <div class="text-base font-medium flex justify-between">
+            <p>Connected UAV</p>
+          </div>
+          <div class="flex mt-10 items-center gap-x-5">
+            <i
+              class="fa-solid fa-plane-circle-check bg-white text-darkblue rounded-full p-4"
+            ></i>
+            <p class="text-5xl font-bold">5/10</p>
+          </div>
+        </div>
+
+        <div
+          class="block p-10 bg-gradient-to-r from-biru to-[#025464] text-white shadow-2xl rounded-xl hover:shadow-lg"
+        >
+          <div class="text-base font-medium flex justify-between">
+            <p>Completed Mission</p>
+          </div>
+          <div class="flex mt-10 items-center gap-x-5">
+            <i
+              class="fa-solid fa-bars-progress bg-white text-darkblue rounded-full p-4"
+            ></i>
+            <p class="text-5xl font-bold">8/12</p>
+          </div>
+        </div>
+
+        <div
+          class="block p-10 bg-gradient-to-r from-[#025464] to-darkblue text-white shadow-2xl rounded-xl hover:shadow-lg"
+        >
+          <div class="text-base font-medium flex justify-between">
+            <p>Connected Antenna Tracker</p>
+          </div>
+          <div class="flex mt-10 items-center gap-x-5">
+            <i
+              class="fa-solid fa-tower-broadcast bg-white text-darkblue rounded-full p-4"
+            ></i>
+            <p class="text-5xl font-bold">7/10</p>
+          </div>
+        </div>
+      </div>
+
+      <p
+        class="text-2xl flex justify-center font-bold mt-12 mb-8 border-r-2 border-l-2 mx-96 text-white font-montserrat"
+        >UAV Statistics</p
+      >
+      <div class="mt-10 grid grid-cols-3 gap-5">
+        <div>
+          <p
+            class="flex justify-center py-4 px-4 mb-4 bg-gradient-to-r from-darkblue to-biru rounded-lg text-white font-poppins shadow font-semibold"
+            >UAV Mileage</p
+          >
+          <div
+            class="bg-gradient-to-r from-darkblue to-biru rounded-xl p-[3.65rem] shadow-2xlflex justify-center items-center px-auto"
+            id="chart"
+          ></div>
+        </div>
+
+        <div>
+          <p
+            class="flex justify-center py-4 px-4 mb-4 bg-gradient-to-r from-biru to-hijau rounded-lg text-white font-poppins shadow font-semibold"
+            >UAV Time Activity</p
+          >
+          <div
+            class="bg-gradient-to-r from-biru to-hijau rounded-xl p-8 shadow-2xl"
+            id="chart2"
+          ></div>
+        </div>
+
+        <div>
+          <p
+            class="flex justify-center py-4 px-4 mb-4 bg-gradient-to-r from-hijau to-darkblue rounded-lg text-white font-poppins shadow font-semibold"
+            >UAV Battery Status</p
+          >
+          <div
+            class="bg-gradient-to-r from-hijau to-darkblue rounded-xl px-8 py-[2.66rem] shadow-2xl"
+            id="chart3"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/f91646e1c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+      var options = {
+        series: [42, 47, 52, 58, 65],
+        chart: {
+          width: 380,
+          type: "polarArea",
+        },
+        colors: ["#9F0D7F", "#424060", "#EA1179", "#025464", "#4A5468"],
+        labels: ["UAV A", "UAV B", "UAV C", "UAV D", "UAV E"],
+        fill: {
+          opacity: 1,
+        },
+        stroke: {
+          width: 1,
+          colors: "#ffffff",
+        },
+        yaxis: {
+          show: false,
+        },
+        legend: {
+          show: false,
+        },
+        plotOptions: {
+          polarArea: {
+            rings: {
+              strokeWidth: 0,
+            },
+            spokes: {
+              strokeWidth: 0,
+            },
+          },
+        },
+        theme: {
+          colors: ["#EA1179", "#9F0D7F", "#424060", "#025464", "#4A5468"],
+        },
+      };
+
+      var chart = new ApexCharts(document.querySelector("#chart"), options);
+      chart.render();
+    </script>
+
+    <script>
+      var options = {
+        series: [
+          {
+            name: "",
+            data: [200, 330, 548, 740, 880],
+          },
+        ],
+        chart: {
+          type: "bar",
+          height: 350,
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 0,
+            horizontal: true,
+            distributed: true,
+            barHeight: "80%",
+            isFunnel: true,
+          },
+        },
+        colors: ["#EA1179", "#9F0D7F", "#424060", "#025464", "#4A5468"],
+        dataLabels: {
+          enabled: true,
+          formatter: function (val, opt) {
+            return opt.w.globals.labels[opt.dataPointIndex];
+          },
+          dropShadow: {
+            enabled: true,
+          },
+        },
+        title: {
+          text: "",
+          align: "middle",
+        },
+        xaxis: {
+          categories: ["UAV A", "UAV B", "UAV C", "UAV D", "UAV E"],
+        },
+        legend: {
+          show: false,
+        },
+      };
+
+      var chart2 = new ApexCharts(document.querySelector("#chart2"), options);
+      chart2.render();
+    </script>
+
+    <script>
+      var options = {
+        series: [44, 55, 67, 83, 96],
+        fill: "#fff",
+        chart: {
+          height: 350,
+          type: "radialBar",
+        },
+        colors: ["#EA1179", "#9F0D7F", "#EB455F", "#C92C6D", "#F0A04B"],
+
+        plotOptions: {
+          radialBar: {
+            dataLabels: {
+              name: {
+                fontSize: "22px",
+              },
+              value: {
+                fontSize: "16px",
+                textColor: "#fff",
+              },
+            },
+          },
+          colors: "fff",
+        },
+        labels: ["UAV A", "UAV B", "UAV C", "UAV D", "UAV E"],
+      };
+
+      var chart3 = new ApexCharts(document.querySelector("#chart3"), options);
+      chart3.render();
+    </script>
+  </body>
+</html>
